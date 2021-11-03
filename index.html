@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantier</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- =================== HEADER =================== -->
+
+    <section class="header">
+
+        <!-- === NAVBAR === -->
+
+        <nav>
+            <div>
+                <ion-icon name="leaf-outline"></ion-icon>
+                <span class="icon-text">Plantier</span>
+            </div>
+
+            <div class="links lg-links" id="lg-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+
+            <ion-icon name="apps-outline" class="navswitch" id="open_navswitch"></ion-icon>
+            <ion-icon name="close-outline" class="navswitch" id="close_navswitch"></ion-icon>
+        </nav>
+
+        <div class="links sm-links" id="sm-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+
+        <!-- === HERO === -->
+
+        <div class="hero" data-aos="fade-right" id="home">
+            <div class="right_side">
+                <div>
+                    <h1>Keep your</h1>
+                    <h1>garden <span id="changing_text">green</span></h1>
+                </div>
+                <p class="hero_subtext">Nature is now more important than it ever was.</p>
+                <div>
+                    <button class="primary_btn">See more</button>
+                    <button class="secondary_btn">Contact us</button>
+                </div>
+            </div>
+            <img src="/assets/img/cherry-blossom-tree.png" alt="Tree image" class="tree">
+        </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+
+    <section class="about" id="about" data-aos="fade-left">
+        <h1>About us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae quibusdam natus, facere soluta rem iusto quod porro odit expedita consequuntur unde earum amet quis debitis, accusamus commodi perspiciatis autem?</p>
+    </section>
+
+    <!-- =================== PRICING =================== -->
+
+    <section class="pricing" data-aos="fade-right" id="pricing">
+        <h1>Pricing</h1>
+
+        <!-- === CARDS === -->
+        
+        <div class="pricing_cards_container">
+            <div class="pricing_card">
+                <h2>Plants</h2>
+                <p>Colorful and nice looking plants. Many types are avaliable now !</p>
+                <span>Starts at <span class="boldy">5$</span></span>
+                <button class="secondary_btn">More</button>
+            </div>
+            <div class="pricing_card">
+                <h2>Trees</h2>
+                <p>What is better than beautiful and majestic trees ? Different size trees are avaliable.</p>
+                <span>Starts at <span class="boldy">15$</span></span>
+                <button class="secondary_btn">More</button>
+            </div>
+            <div class="pricing_card">
+                <h2>Garden</h2>
+                <p>You want a good looking garden ? don’t worry, our staff is here to beautify yours. </p>
+                <span>Starts at <span class="boldy">150$</span></span>
+                <button class="secondary_btn">More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+
+    <footer>
+        <span>© 2021 - 2021 Plantier. All rights reserved.</span>
+        <div>
+            <a href="#">Legal mentions</a>
+            <a href="#">Certification</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+
+/* =================== GLOBAL RULES =================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(196,232,107);
+    background: linear-gradient(175deg, rgba(196,232,107,1) 14%, rgba(0,188,180,1) 100%) fixed;
+    margin-bottom: 50px;
+}
+
+/* =================== HEADER =================== */
+
+nav {
+    background: rgba(0, 0, 0, 0.17);
+    height: 62px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.links {
+    display: flex;
+    gap: 60px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.sm-links {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.17);
+    display: none;
+    width: 100vw;
+    font-weight: bold;
+}
+
+.navswitch {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+#close_navswitch {
+    font-size: 35px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 250px;
+}
+
+.hero .right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#changing_text {
+    color: #43AA8B;
+}
+
+.hero_subtext {
+    max-width: 330px;
+}
+
+.tree {
+    height: 372px;
+    width: 372px;
+}
+
+/* =================== ABOUT =================== */
+
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.about p {
+    margin-top: 50px;
+}
+
+/* =================== PRICING =================== */
+
+.pricing {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.pricing_cards_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.pricing_card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 270px;
+}
+
+.about p {
+    max-width: 500px;
+}
+
+
+/* =================== FOOTER =================== */
+
+footer {
+    text-align: center;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =================== MEDIA QUERIES =================== */
+
+/* === LG ===*/
+@media (max-width: 1024px) {
+    .hero {
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 25%;
+    }
+
+    .pricing_cards_container {
+        flex-direction: column;
+    }
+}
+
+/* === SM ===*/
+@media (max-width: 640px) {
+    .tree {
+        height: 250px;
+        width: 250px;
+    }
+
+    nav {
+        padding: 20px 50px;
+    }
+
+    .about p {
+        max-width: 400px;
+    }
+}
+ 
+/* =================== BUTTONS =================== */
+
+.primary_btn {
+    background: #184E77;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding: 11px 31px;
+    border-radius: 18.5px;
+    transition-duration: .5s;
+}
+
+.secondary_btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding: 9px 31px;
+    border-radius: 18.5px;
+    transition-duration: .5s;
+}
+
+.primary_btn:hover {
+    background: #184ea9;
+}
+
+.secondary_btn:hover {
+    background: white;
+    color: black;
+}
+
+/* =================== OTHER =================== */
+
+a {
+    color: white;
+    transition-duration: .3s;
+}
+
+a:hover {
+    color: #43AA8B;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.boldy {
+    font-weight: bold;
+}
